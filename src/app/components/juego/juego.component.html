@@ -1,8 +1,14 @@
-<h1>Adivina el número!</h1>
-<p>Adivina un número entre 1 y 100.</p>
-
-<input type="number" #guess placeholder="Ingresa tu número" />
-<button (click)="checkGuess(guess.value)">Adivinar</button>
-
-<p>{{ message }}</p>
-<button (click)="resetGame()">Reiniciar juego</button>
+<div class="game-background">
+    <div class="game-card">
+        <h1>Adivina el número</h1>
+        <p>Adivina un número entre 1 y 100.</p>
+        <div class="input-section">
+            <input type="number" #guess placeholder="Ingresa tu número" (keydown.enter)="handleGuess(guess.value)"/>
+            <button class="adivinar" (click)="handleGuess(guess.value)">Adivinar
+                <span *ngIf="loading" class="spinner"></span> <!-- Ícono de cargado -->
+            </button>
+        </div>
+        <p class="message">{{ message }}</p>
+        <button class="reiniciar" (click)="resetGame()">Reiniciar juego</button>
+    </div>
+</div>
