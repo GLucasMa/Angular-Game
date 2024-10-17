@@ -1,0 +1,22 @@
+h1 {
+    color: #007bff;
+  }
+  
+  input {
+    width: 200px;
+    padding: 8px;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  

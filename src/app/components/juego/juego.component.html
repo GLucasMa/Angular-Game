@@ -1,0 +1,8 @@
+<h1>Adivina el número!</h1>
+<p>Adivina un número entre 1 y 100.</p>
+
+<input type="number" #guess placeholder="Ingresa tu número" />
+<button (click)="checkGuess(guess.value)">Adivinar</button>
+
+<p>{{ message }}</p>
+<button (click)="resetGame()">Reiniciar juego</button>
