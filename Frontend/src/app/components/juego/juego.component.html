@@ -1,0 +1,19 @@
+<div class="game-background">
+    <div class="dificultad">
+        <label for="guess">Adivina el número entre 1 y {{ maxNumber }}</label>
+        <button (click)="setDifficulty('facil')">Fácil</button>
+        <button (click)="setDifficulty('medio')">Medio</button>
+        <button (click)="setDifficulty('dificil')">Difícil</button>
+    </div> 
+    <div class="game-card">
+        <h1>Adivina el número</h1>
+        <div class="input-section">
+            <input type="number" #guess placeholder="Ingresa tu número" (change)="handleGuess($event)"/>
+            <button class="adivinar" (change)="handleGuess($event)" required >Adivinar
+                <span *ngIf="loading" class="spinner"></span> <!-- Ícono de cargado -->
+            </button>
+        </div>
+        <p class="message">{{ message }}</p>
+        <button class="reiniciar" (click)="resetGame()">Reiniciar juego</button>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+/* Estilos generales para el contenedor del formulario */
+.user-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos del título */
+.user-container h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos de la tabla */
+table.mat-elevation-z8 {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  min-width: 400px;
+}
+
+/* Estilo para el encabezado de la tabla */
+table th {
+  background-color: #36097a;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Estilo para las celdas de la tabla */
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Efecto de hover en las filas */
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Estilo alternativo para las filas impares */
+table tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Ajuste de colores y sombras para filas activas o seleccionadas */
+table tr.mat-row-selected {
+  background-color: #e3f2fd;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
